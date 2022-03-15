@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'matao_serifregular';
+  src: url('../matao/matao_serif-webfont.woff2') format('woff2'),
+       url('../matao/matao_serif-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Main Styling */
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Utility Classes 
+
+container allows structure in the navbar while
+still having the navbar background
+*/
+.container {
+  margin: auto;
+  /* stops moving when it hits 1100px */
+  max-width: 1100px;
+  overflow: auto; 
+  padding: 0 40px;
+}
+
+.text-primary {
+  color:rgb(241, 213, 181)
+}
+
+.lead {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'matao_serifregular';
+  color: rgb(255, 243, 230);
+  background: rgba(110, 110, 110, 0.829);
+  padding: 13px 15px;
+  margin-top: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(143, 144, 145, 0.37);
+  color:rgb(255, 247, 247);
+  border:rgb(255, 255, 255) 1px solid;
+}
+
+.btn-light {
+  background: rgb(241, 230, 217);
+  color:#333;
+}
+
+.bg-dark {
+  background: rgb(56, 51, 48);
+  /* background: url('../img/outdoor.png') no-repeat center center/cover; */
+  background-position: 30px;
+  color: white;
+}
+
+.bg-light {
+  background: rgb(216, 216, 216);
+  color: rgb(58, 58, 58);
+}
+
+.bg-primary {
+  background: rgb(241, 213, 181);
+}
+
+/* Navbar */
+#navbar {
+  background: rgb(241, 230, 217);
+  color: white;
+  overflow: auto;
+}
+
+/* links will remain hidden unless you color them */
+#navbar a {
+  color: rgb(56, 56, 56);
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+/* navbar ul li IS PART OF navbar ul, which floats to the right
+it can still remain in the same spot, but only the text
+float left 
+*/
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+/* hover + current page */
+#navbar ul li a:hover, #navbar ul li a.current {
+  background: rgb(231, 219, 205);
+  color: rgb(36, 36, 36);
+}
+
+/* showcase */
+#showcase {
+  background: url('../img/hk-building.png') no-repeat center center/cover;
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color: rgb(240, 240, 240);
+  text-align: center;
+  padding-top: 110px;
+  font-weight: 400;
+}
+
+#showcase .showcase-content h1 {
+  color: rgb(231, 227, 227);
+  font-size: 60px;
+  line-height: 1.2em;
+  font-family: 'matao_serifregular';
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/*Home Info
+*/
+
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url('../img/history.png') no-repeat center center/cover;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+#home-info .history {
+  font-family: 'matao_serifregular';
+  font-size: 30px;
+}
